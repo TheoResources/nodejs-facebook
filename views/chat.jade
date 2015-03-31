@@ -2,5 +2,8 @@ html
   head
   body
     h1 Chat
+    form#newMsgForm(method='POST')
+      input#msgInput(type='text' placeholder='Type new message')
+      button Send
     script(src='//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js')
     script(src='chat.js')
